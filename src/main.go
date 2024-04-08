@@ -23,6 +23,11 @@ func main() {
 			continue
 		}
 
+		if len(entry) != 8 {
+			fmt.Println("Error: El número de DNI/NIE debe tener 8 caracteres.")
+			continue
+		}
+
 		number, _ := strconv.Atoi(entry)
 
 		fmt.Printf("La letra del dni es: %c",
